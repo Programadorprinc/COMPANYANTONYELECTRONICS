@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="estile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="CAE">CAE</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="Navbar">
+                <ul>
+                    <li><a href="./Pagina%20Web/index.php">Inicio</a></li>
+                    <li><a href="https://5b6a-45-166-92-83.ngrok-free.app/Pagina%20Web/Servicios.html">Servicios</a></li>
+                    <li><a href="https://5b6a-45-166-92-83.ngrok-free.app/Pagina%20Web/Productos.html">Productos</a></li>
+                    <li><a href="http://localhost/contacto/">Contáctanos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        </div>
+   <div class="header-contact container">
+    <div class="header-txt">
+      <marquee>
+        <h2>COMPANY ANTONY ELECTRONICS</h2>
+    </marquee>
+    
+        
+        <p>
+            Elevando la tecnología donde la innovación se encuentra con la excelencia<br>
+
+        </p>
+        <a href="https://5b6a-45-166-92-83.ngrok-free.app/Pagina%20Web/Vision.html" class="btn-1">Información</a>
+
+    </div>
+       
+        </div>     
+</header>
+    <section class="General container ">
+        <h2>Los Mejores Productos</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/auricular.jpg" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/Auricular.png" alt="Imagen 3">
+              </div>
+
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/lap.png" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/Lap1.png" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/Mando.png" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/PC.png" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/phone1.png" alt="Imagen 3">
+              </div>
+              
+              <div class="carousel-item">
+                <img class="carousel-img" src="images/phone3.png" alt="Imagen 3">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <span class="carousel-control" onclick="prevSlide()">&#10094;</span>
+            <span class="carousel-control" onclick="nextSlide()">&#10095;</span>
+          </div>
+    </section>
+    <section class="Info-1">
+        <div class="Info-contant container">
+         <h2>Ofrecemos</h2>
+            <div class="Info-circle">
+                <div class="circle-txt">
+                   <div class="circle-1">
+                    <h3>Artículos</h3>
+                   </div>
+                   <p>
+                    La mejor experiencia en los mejores artículos.
+                   </p>
+                </div>
+                <div class="circle-txt">
+                    <div class="circle-1">
+                     <h3>Computadoras</h3>
+                    </div>
+                    <p>
+                        La mejor experiencia en las mejores Computadoras..
+                    </p>
+                 </div>
+                 <div class="circle-txt">
+                    <div class="circle-1">
+                     <h3>Accesorios</h3>
+                    </div>
+                    <p>
+                        La mejor experiencia en los mejores Accesorios.
+                    </p>
+                 </div>
+                 <div class="circle-txt">
+                    <div class="circle-1">
+                     <h3>Repuestos</h3>
+                    </div>
+                    <p>
+                        La mejor experiencia en los mejores Repuestos.
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="General g2 container ">
+        <h2>Algunas Promociones</h2>
+        <div class="General-contant">
+            <div class="General-4 txt">
+                <h3></h3>
+                <p>
+                  
+                </p>
+            </div>
+            <div class="General-5 txt">
+                <h3></h3>
+                <p>
+ 
+                </p>
+            </div>
+            <div class="General-6 txt">
+                <h3></h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+         
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+  
+    function showSlide(index) {
+      if (index < 0) {
+        index = slides.length - 1;
+      } else if (index >= slides.length) {
+        index = 0;
+      }
+  
+      currentIndex = index;
+  
+      const offset = -currentIndex * 100;
+      document.querySelector('.carousel-slide').style.transform = `translateX(${offset}%)`;
+    }
+  
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+  
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+  
+    setInterval(nextSlide, 5000);
+  </script>
+  
+    </section>
+    <section class="Info-2">
+        <div class="Info-contant container">
+            <h2>Capacidad</h2>
+            <div class="Capa">
+                <div class="Capa-left">
+                    <div class="Capa-txt">
+                        <img src="images/Reparacion.png" alt="">
+                        <h3>Reparación y mantenimiento</h3>
+                        <p>
+                             Ofrecemos servicios de reparación y mantenimiento de dispositivos electrónicos, 
+                            lo que podría ser una ventaja y mas años de vida de tu dispocitivo electrónico 
+                        </p>
+                    </div>  
+                    <div class="Capa-txt">
+                        <img src="images/Consulta.png" alt="">
+                        <h3>Consultoría técnica</h3>
+                        <p>
+                            Ofrecemos servicios de consultoría en electrónica para ayudar a personas u
+                             otras empresas con sus proyectos o problemas técnicos.
+                        </p>
+                    </div>        
+                </div>
+                    <div>
+                        <div class="Capa-right">
+                            <div class="Capa-txt">
+                                <img src="images/Respuesta.png" alt="">
+                                <h3>Respuesta Rapida</h3>
+                                <p>
+                                    Somos una empresa de electrónica especializada en diseño ,ofreciendo soluciones a medida para necesidades 
+                                    únicas. Nos enfocamos en componentes especializados, reparación de dispositivos y consultoría técnica.
+                        
+                                </p>
+                                
+                            </div>        
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </section>
+         <footer class="footerContainer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://web.facebook.com/profile.php?id=100093634932026"><i class="fa-brands fa-facebook" targer="_black"></i></a>
+                <a href="https://wa.link/8e3nd3"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@COMPANYANTONHY/featured"><i class="fa-brands fa-youtube" ></i></a>
+            </div>
+    
+        </div>
+    </footer>
+    
+   
+    
+
+</body>
+</html>

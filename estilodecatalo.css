@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 20px;
+  }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+header {
+    background-image: url(images/1.png);
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    max-width: 18%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: nome;
+    padding: 10px;
+    background-color:white;
+    margin: 10px;
+    border-radius: 50px;
+
+}
+.socialIcons a i {
+    font-size: 2em;
+    color:black;
+    opacity: 0.9;
+
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5;
+
+}
+
+
+
+
+
+
+
+
+
+.header {
+    background-image: url(images/1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+   
+}
+.CAE{
+
+    color: #f9f6f6;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.menu .Navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .Navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.header-txt h2{
+    font-size: 45px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header-txt p {
+    color: #bebebe;
+    font-size: 18px; 
+    padding: 0 250px;
+    margin-bottom: 45px;
+
+}
+.btn-1{
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #fffdfc;
+    color: #fffdfc;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600px;
+}
+.btn-1:hover{
+    color: #1b293a;
+    background-color: #fffdfc;
+
+}
+
+.General{
+    padding: 50px 0;
+    text-align: center;
+
+}
+.General-contant{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+
+    .menu label {
+    display: initial;
+    }
+    .menu .Navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1b293a;
+        display: none;
+    }
+
+    .menu .Navbar ul li{
+        width: 100%;
+    }
+   #menu:checked ~ .Navbar{
+    display: initial;
+   }
+
+}

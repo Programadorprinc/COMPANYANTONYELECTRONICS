@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 20px;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    
+    background-image: url(images/1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+   
+}
+.CAE{
+
+    color: #f9f6f6;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.menu .Navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .Navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.header-txt h2{
+    font-size: 45px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header-txt p {
+    color: #bebebe;
+    font-size: 18px; 
+    padding: 0 250px;
+    margin-bottom: 45px;
+
+}
+.btn-1{
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #fffdfc;
+    color: #fffdfc;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600px;
+}
+.btn-1:hover{
+    color: #1b293a;
+    background-color: #fffdfc;
+
+}
+
+.General{
+    padding: 50px 0;
+    text-align: center;
+
+}
+.General-contant{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    
+}
+.General-1 {
+    background-image: url(images/phone3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    padding: 170px 50px;
+    
+}
+.General-2 {
+    background-image: url(images/Mando.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    padding: 170px 55px;
+}
+.General-3 {
+    background-image: url(images/phone1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    padding: 170px 50px;
+}
+.General-4 {
+    background-image: url(images/Iphones\ Antony.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 198px;
+}
+.General-5 {
+    background-image: url(images/Playstation\ Ant.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 198px;
+}
+.General-6 {
+    background-image: url(images/Antony\ Company.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 170px 198px;
+}
+h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #1b293a;
+    margin: 30px 0;
+}
+
+.txt h3{
+    font-size: 18px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.txt p {
+    color: #000000;
+    font-size: 10px;
+}
+
+.Info-1{
+    padding: 250px 0;
+    background-image: url(images/3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 95% 95%;
+    
+}
+
+.Info-contant{
+    text-align:center;
+}
+
+.Info-contant h2 , span{
+    color: #fffdfc;
+}
+.Info-circle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.circle-txt{
+    width: 25;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 100px;
+}
+
+.circle-1{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fffdfc;
+    border-radius: 50%;
+    padding-top: 40px;
+}
+.circle-1 h3{
+    color: #ebebeb;
+    font-size: 10px;
+}
+
+.circle-txt p{
+    color: #fffdfc;
+    margin-top: 50px;
+}
+.Info-2{
+    padding: 250px 0;
+    background-image: url(images/4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 95% 95%;
+    border-radius: 20px;
+}
+.Capa{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 35px;
+}
+.Capa-left{
+     width: 50%;
+     padding-right: 25px;
+}
+
+.Capa-right{
+    width: 50%;
+    padding-left: 35px;
+}
+.Capa-txt{
+    margin-bottom: 25px;
+}
+.Capa-txt img{
+    width: 50px;
+}
+.Capa-txt img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+.Capa-txt h3{
+    font-size: 20px;
+    color: #fffdfc;
+}
+.Capa-txt p{
+    color: #ebebeb;
+    font-size: 16px;
+}
+
+.footer{
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+.form{
+    margin-top: 35px;
+}
+.Campo{
+    margin-right: 10px;
+    padding: 17px 35px;
+    border: 2px solid #b4b4b4;
+    outline: nome;
+    color: #1b293a;
+}
+
+
+.footerContainer{
+    width: 100%;
+    padding: 50px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: nome;
+    padding: 10px;
+    background-color:rgb(255, 27, 27);
+    margin: 10px;
+    border-radius: 50px;
+
+}
+.socialIcons a i {
+    font-size: 2em;
+    color:black;
+    opacity: 0.9;
+
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5;
+
+}
+h3{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #1b293a;
+    background-position: center;
+}
+.de h3{
+    font-size: 18px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.carousel-container {
+    width: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 50px;
+  }
+
+  .carousel-control {
+    cursor: pointer;
+    margin: 0 10px;
+    color: #1b293a;
+  }
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+
+    .menu label {
+    display: initial;
+    }
+    .menu .Navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1b293a;
+        display: none;
+    }
+
+    .menu .Navbar ul li{
+        width: 100%;
+    }
+   #menu:checked ~ .Navbar{
+    display: initial;
+   }
+   
+
+   .header{
+    min-height: 0vh;
+   }
+
+   .header-contant{
+    padding: 100px 30px;
+   }
+
+   .header-txt h1{
+    font-size: 50px;
+   }
+
+   .header-txt p{
+    padding: 0;
+   }
+
+   .General{
+    padding: 30px 30px 0 30px;
+   }
+   .General-contant{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   }
+
+   .General-1,
+   .General-2,
+   .General-3,
+   .General-4,
+   .General-5,
+   .General-6{
+    height: 365px;
+    padding: 100px ;
+    margin-bottom: 10px;
+   }
+
+.Info-1{
+    padding: 200px 200px;
+    background-size: cover;
+    margin-top: -110px;
+}
+
+.Info-circle{
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-txt{
+   width: 100%;
+   margin-bottom: 25px;
+}
+.g2{
+    margin-top: -125px;
+}
+.Info-2{
+    padding: 280px 30px;
+    background-size: cover;
+    margin-top: -180px;
+}
+.Capa{
+    flex-direction: column;
+}
+.Capa-left{
+    width: 100%;
+    padding-right: 0%;
+}
+
+.Capa-right{
+    width: 100%;
+    padding-left: 0;
+}
+
+h2{
+    font-size: 40px;
+    
+}
+
+.footer{
+    padding: 0;
+    margin-top: -140;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.Campo{
+    margin: 0 0 10px 0;
+}
+
+.footer-txt{
+    margin-top: 10px;
+}
+/* Antony Alvarenga */
+}

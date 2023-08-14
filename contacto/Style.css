@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(imagen/4.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container{
+    text-align: center;
+}
+
+.form-container h2{
+    font-size: 40px;
+    color: #f5fcff;
+    margin: 10px;
+}
+
+.form-container p {
+    font-size: 18px;
+    color: #949f80;
+    margin-bottom: 50px;
+}
+form{
+    padding: 50px;
+    background: linear-gradient(
+       50deg,
+        rgba(29, 31, 40, 0.501) 0%,
+        rgba(70, 74, 136, 0.444) 50%,
+        rgba(29, 31, 40, 0.501) 100%
+    ) ;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2%);
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+
+}
+label {
+    color: #f5fcff;
+    font-size: 15px;
+    margin-bottom: 15px;
+    
+}
+
+input, textarea {
+    padding: 20px 15px;
+    background-color:#00c0c340;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    color: #f5fcff;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #949fbd;
+    font-size: 16px;
+
+}
+
+textarea {
+    margin-bottom: 40px;
+}
+
+.btn{
+    padding: 17px 15px;
+    width: 180px;
+    align-self: center;
+    text-transform: capitalize;
+    color: #f5fcff ;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 39, 129, 0.4);
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        rgba(67, 150, 239, 0.628) 0%,
+        rgba(2, 227, 201, 0.537) 100%
+    );
+}
+
+.success{
+    position: relative;
+    top: 60px;
+    color: rgb(2,227, 211);
+    font-size: 30px;
+}
+.error{
+    position: absolute;
+    top: 50px;
+    color: red;
+    font-size: 30px;
+
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+   
+}
+.CAE{
+
+    color: #f9f6f6;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.menu .Navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .Navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.header-txt h2{
+    font-size: 45px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header-txt p {
+    color: #bebebe;
+    font-size: 18px; 
+    padding: 0 250px;
+    margin-bottom: 45px;
+
+}
+
+.txt h3{
+    font-size: 18px;
+    color: #fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.txt p {
+    color: #000000;
+    font-size: 10px;
+}
+@media(max-width:991px){
+    body {
+        padding: 30px;
+    }
+    form{
+        width: 400px;
+    }
+
+    .form-group{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        margin-bottom: 30px;
+    }
+    .menu {
+        padding: 30px;
+    }
+
+
+    .menu label {
+    display: initial;
+    }
+    .menu .Navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1b293a;
+        display: none;
+    }
+
+    .menu .Navbar ul li{
+        width: 100%;
+    }
+   #menu:checked ~ .Navbar{
+    display: initial;
+   }
+   
+
+   .header{
+    min-height: 0vh;
+   }
+
+   .header-contant{
+    padding: 100px 30px;
+   }
+
+   .header-txt h1{
+    font-size: 50px;
+   }
+
+   .header-txt p{
+    padding: 0;
+   }
+
+   .General{
+    padding: 30px 30px 0 30px;
+   }
+   .General-contant{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   }
+
+   .General-1,
+   .General-2,
+   .General-3,
+   .General-4,
+   .General-5,
+   .General-6{
+    height: 365px;
+    padding: 100px ;
+    margin-bottom: 10px;
+   }
+
+.Info-1{
+    padding: 200px 200px;
+    background-size: cover;
+    margin-top: -110px;
+}
+
+.Info-circle{
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-txt{
+   width: 100%;
+   margin-bottom: 25px;
+}
+.g2{
+    margin-top: -125px;
+}
+.Info-2{
+    padding: 280px 30px;
+    background-size: cover;
+    margin-top: -180px;
+}
+.Capa{
+    flex-direction: column;
+}
+.Capa-left{
+    width: 100%;
+    padding-right: 0%;
+}
+
+.Capa-right{
+    width: 100%;
+    padding-left: 0;
+}
+
+h2{
+    font-size: 40px;
+    
+}
+
+.footer{
+    padding: 0;
+    margin-top: -140;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.Campo{
+    margin: 0 0 10px 0;
+}
+
+.footer-txt{
+    margin-top: 10px;
+}
+/* Antony Alvarenga */
+}
